@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.article , .header , .card {
+    min-height: 12rem;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.doublebox {
+    margin: 0 1rem;
+}
+
+.header , .card {
+    color: white;
+}
+
+.card{
+    justify-content: center;
+}
+
+.header{
+    background-color: rgb(60,138,228);
+    margin: 1rem 1rem;
+}
+
+.article{
+    background-color: rgb(228, 228, 228);
+}
+
+#card1{
+    background-color: rgb(60,138,228);
+}
+
+#card2{
+    background-color: rgb(231,187,93);
+}
+
+#card3{
+    background-color: rgb(93,231,190);
+}
+
+#card4{
+    background-color: rgb(231,93,127);
+}
+
+@media screen and (min-width : 768px) {
+
+    .doublebox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #article1 , #article2 , #article3 {
+        width: 31%;
+    }
+    
+    .card{
+        width: 31%;
+    }
+
+    #card4{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+
+    .doublebox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #article1 , #article2 {
+        width: 48%;
+    }
+    
+    #article3 {
+        width: 100%;
+    }
+
+    .card{
+        width: 48%;
+    }
+
+}
+
+@media screen and (max-width : 576px) {
+
+    .doublebox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #article3 , #article2 , #article1 {
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
